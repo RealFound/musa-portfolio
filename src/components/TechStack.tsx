@@ -10,6 +10,10 @@ import {
   CylinderCollider,
   RapierRigidBody,
 } from "@react-three/rapier";
+import { isLowPowerDevice } from "./utils/device";
+
+// Zayıf cihazlarda (mobil vb.) küre sayısını azalt, postprocessing'i kapat
+const lowPower = isLowPowerDevice();
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
@@ -23,7 +27,7 @@ const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
-const spheres = [...Array(30)].map(() => ({
+const spheres = [...Array(lowPower ? 12 : 30)].map(() => ({
   scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
 }));
 
@@ -169,6 +173,7 @@ const TechStack = () => {
 
       <Canvas
         shadows
+        dpr={[1, lowPower ? 1 : 1.5]}
         gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
         camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
         onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
@@ -184,7 +189,7 @@ const TechStack = () => {
           shadow-mapSize={[512, 512]}
         />
         <directionalLight position={[0, 5, -4]} intensity={2} />
-        <Physics gravity={[0, 0, 0]}>
+        <Physics gravity={[0, 0, 0]} paused={!isActive}>
           <Pointer isActive={isActive} />
           {spheres.map((props, i) => (
             <SphereGeo
@@ -200,9 +205,11 @@ const TechStack = () => {
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />
-        <EffectComposer enableNormalPass={false}>
-          <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
-        </EffectComposer>
+        {!lowPower && (
+          <EffectComposer enableNormalPass={false}>
+            <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
+          </EffectComposer>
+        )}
       </Canvas>
     </div>
   );

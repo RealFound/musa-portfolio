@@ -15,7 +15,8 @@ const setLighting = (scene: THREE.Scene) => {
 
   const pointLight = new THREE.PointLight(0xc2a4ff, 0, 100, 3);
   pointLight.position.set(3, 12, 4);
-  pointLight.castShadow = true;
+  // Point light gölgesi maliyetli ve görsel etkisi düşük — GPU tasarrufu için kapalı
+  pointLight.castShadow = false;
   scene.add(pointLight);
 
   new RGBELoader()
