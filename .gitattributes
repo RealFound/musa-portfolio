@@ -1,0 +1,4 @@
+# character.glb bu repoda düz Git nesnesi olarak saklanir (LFS yok).
+# Global git-attributes dosyasinin LFS filtresini burada devre disi birakiyoruz,
+# boylece Netlify/vercel gibi servisler LFS sunucusuna bagimlı kalmaz.
+public/models/character.glb -text -filter -diff -merge
