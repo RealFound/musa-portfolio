@@ -92,6 +92,7 @@
 }
 .work-image-in {
   position: relative;
+  width: 100%;
 }
 .work-link {
   position: absolute;
@@ -126,8 +127,11 @@
   object-fit: cover;
 }
 .work-image img {
+  width: 100%;
+  height: auto;
   max-width: 100%;
   max-height: 350px;
+  object-fit: cover;
 }
 @media only screen and (max-height: 900px) {
   .work-image img {

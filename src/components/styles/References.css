@@ -1,0 +1,100 @@
+.refs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  padding: 60px 0 40px;
+}
+
+.refs-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(0deg, #7f40ff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.refs-note {
+  color: #9b8fae;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+.refs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.ref-card {
+  position: relative;
+  border: 1px solid rgba(194, 164, 255, 0.18);
+  border-radius: 16px;
+  padding: 30px 26px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: 0.35s;
+}
+
+.ref-card:hover {
+  border-color: var(--accentColor);
+  background: rgba(194, 164, 255, 0.06);
+  transform: translateY(-5px);
+}
+
+.ref-no {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--accentColor);
+}
+
+.ref-card h4 {
+  font-size: 22px;
+  line-height: 24px;
+  margin: 12px 0 4px;
+  font-weight: 500;
+}
+
+.ref-card h5 {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: var(--accentColor);
+  text-transform: capitalize;
+  margin: 0 0 12px;
+}
+
+.ref-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a99fba;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .refs-section h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .refs-section {
+    padding: 40px 0 20px;
+  }
+  .refs-grid {
+    grid-template-columns: 1fr;
+  }
+  .refs-section h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}

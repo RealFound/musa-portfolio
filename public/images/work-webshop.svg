@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+  <rect width="1024" height="768" fill="#0d0a12"/>
+  <g opacity="0.06" stroke="#c2a4ff" stroke-width="1">
+    <path d="M0 96H1024M0 192H1024M0 288H1024M0 384H1024M0 480H1024M0 576H1024M0 672H1024M128 0V768M256 0V768M384 0V768M512 0V768M640 0V768M768 0V768M896 0V768"/>
+  </g>
+  <!-- browser window -->
+  <g>
+    <rect x="96" y="96" width="832" height="576" rx="18" fill="#171221" stroke="#2c2440" stroke-width="2"/>
+    <rect x="96" y="96" width="832" height="56" rx="18" fill="#241a38"/>
+    <rect x="96" y="128" width="832" height="24" fill="#241a38"/>
+    <circle cx="136" cy="124" r="8" fill="#ff4d4d"/><circle cx="166" cy="124" r="8" fill="#ffe14d"/><circle cx="196" cy="124" r="8" fill="#7dff5c"/>
+    <rect x="240" y="110" width="480" height="28" rx="14" fill="#0d0a12"/>
+    <rect x="264" y="120" width="180" height="8" rx="4" fill="#5b4a86"/>
+    <circle cx="880" cy="124" r="12" fill="none" stroke="#c2a4ff" stroke-width="3"/>
+    <path d="M889 133l10 10" stroke="#c2a4ff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- product cards -->
+  <g>
+    <g>
+      <rect x="136" y="192" width="240" height="200" rx="14" fill="#241a38" stroke="#7c5cff" stroke-width="2"/>
+      <rect x="160" y="216" width="192" height="96" rx="8" fill="#0d0a12"/>
+      <rect x="216" y="238" width="52" height="52" fill="#c2a4ff"/>
+      <rect x="224" y="246" width="36" height="36" fill="#7c5cff"/>
+      <rect x="160" y="330" width="140" height="10" rx="5" fill="#c2a4ff"/>
+      <rect x="160" y="350" width="80" height="8" rx="4" fill="#5b4a86"/>
+      <rect x="300" y="342" width="52" height="24" rx="12" fill="#7dff5c" opacity="0.9"/>
+    </g>
+    <g>
+      <rect x="392" y="192" width="240" height="200" rx="14" fill="#241a38" stroke="#c2a4ff" stroke-width="3"/>
+      <rect x="416" y="216" width="192" height="96" rx="8" fill="#0d0a12"/>
+      <rect x="472" y="238" width="52" height="52" fill="#ffe14d"/>
+      <rect x="480" y="246" width="36" height="36" fill="#ff9f40"/>
+      <rect x="416" y="330" width="140" height="10" rx="5" fill="#c2a4ff"/>
+      <rect x="416" y="350" width="80" height="8" rx="4" fill="#5b4a86"/>
+      <rect x="556" y="342" width="52" height="24" rx="12" fill="#7c5cff"/>
+    </g>
+    <g>
+      <rect x="648" y="192" width="240" height="200" rx="14" fill="#241a38" stroke="#7c5cff" stroke-width="2"/>
+      <rect x="672" y="216" width="192" height="96" rx="8" fill="#0d0a12"/>
+      <rect x="728" y="238" width="52" height="52" fill="#4dd0ff"/>
+      <rect x="736" y="246" width="36" height="36" fill="#7c5cff"/>
+      <rect x="672" y="330" width="140" height="10" rx="5" fill="#c2a4ff"/>
+      <rect x="672" y="350" width="80" height="8" rx="4" fill="#5b4a86"/>
+      <rect x="812" y="342" width="52" height="24" rx="12" fill="#7dff5c" opacity="0.9"/>
+    </g>
+  </g>
+  <!-- cart / payment bar -->
+  <g>
+    <rect x="136" y="432" width="752" height="200" rx="14" fill="#1c1630" stroke="#2c2440"/>
+    <rect x="176" y="472" width="200" height="14" rx="7" fill="#c2a4ff"/>
+    <rect x="176" y="502" width="320" height="10" rx="5" fill="#5b4a86"/>
+    <rect x="176" y="524" width="280" height="10" rx="5" fill="#5b4a86" opacity="0.7"/>
+    <rect x="176" y="568" width="180" height="36" rx="18" fill="#7c5cff"/>
+    <rect x="212" y="582" width="108" height="8" rx="4" fill="#0d0a12"/>
+    <!-- card icon -->
+    <g>
+      <rect x="680" y="464" width="168" height="104" rx="12" fill="#0d0a12" stroke="#7c5cff" stroke-width="2"/>
+      <rect x="680" y="486" width="168" height="20" fill="#7c5cff" opacity="0.8"/>
+      <rect x="700" y="528" width="70" height="8" rx="4" fill="#c2a4ff" opacity="0.8"/>
+      <rect x="700" y="544" width="44" height="6" rx="3" fill="#5b4a86"/>
+    </g>
+  </g>
+</svg>

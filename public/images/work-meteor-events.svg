@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+  <rect width="1024" height="768" fill="#0d0a12"/>
+  <g opacity="0.06" stroke="#c2a4ff" stroke-width="1">
+    <path d="M0 96H1024M0 192H1024M0 288H1024M0 384H1024M0 480H1024M0 576H1024M0 672H1024M128 0V768M256 0V768M384 0V768M512 0V768M640 0V768M768 0V768M896 0V768"/>
+  </g>
+  <g fill="#c2a4ff" opacity="0.7">
+    <rect x="120" y="80" width="4" height="4"/><rect x="260" y="150" width="3" height="3"/><rect x="420" y="60" width="4" height="4"/><rect x="560" y="180" width="3" height="3"/><rect x="700" y="90" width="4" height="4"/><rect x="880" y="140" width="3" height="3"/><rect x="180" y="260" width="3" height="3"/><rect x="940" y="260" width="4" height="4"/>
+  </g>
+  <!-- meteor trail -->
+  <path d="M232 96L560 400" stroke="#ff9f40" stroke-width="10" opacity="0.25"/>
+  <path d="M260 110L572 412" stroke="#ff4d4d" stroke-width="18" opacity="0.35" stroke-linecap="round"/>
+  <path d="M300 130L580 416" stroke="#ffe14d" stroke-width="6" opacity="0.6" stroke-linecap="round"/>
+  <!-- meteor -->
+  <g transform="rotate(43 610 440)">
+    <rect x="570" y="400" width="80" height="80" rx="14" fill="#ff6b3d"/>
+    <rect x="584" y="414" width="52" height="52" rx="10" fill="#ffe14d"/>
+    <rect x="598" y="428" width="24" height="24" rx="6" fill="#fff6c9"/>
+  </g>
+  <!-- shockwave sparks -->
+  <g stroke="#ff9f40" stroke-width="5" stroke-linecap="round" opacity="0.8">
+    <path d="M520 470l-36-18"/><path d="M700 470l36-18"/><path d="M548 500l-44 6"/><path d="M672 500l44 6"/>
+  </g>
+  <!-- crater ground -->
+  <g>
+    <rect x="0" y="540" width="1024" height="228" fill="#171221"/>
+    <g fill="#241a38">
+      <rect x="0" y="520" width="96" height="20"/><rect x="128" y="520" width="96" height="20"/><rect x="256" y="520" width="96" height="20"/><rect x="672" y="520" width="96" height="20"/><rect x="800" y="520" width="96" height="20"/><rect x="928" y="520" width="96" height="20"/>
+    </g>
+    <path d="M360 540q152-72 304 0l-28 60q-124-44-248 0z" fill="#0d0a12"/>
+    <path d="M392 560q120-52 240 0" stroke="#ff6b3d" stroke-width="8" fill="none" opacity="0.85"/>
+  </g>
+  <!-- loot chest in crater -->
+  <g>
+    <rect x="472" y="560" width="80" height="56" fill="#8a5c2b"/>
+    <rect x="472" y="544" width="80" height="20" fill="#a9743a"/>
+    <rect x="504" y="560" width="16" height="20" fill="#ffe14d"/>
+    <rect x="452" y="600" width="10" height="10" fill="#ffe14d"/><rect x="560" y="592" width="10" height="10" fill="#c2a4ff"/><rect x="536" y="624" width="10" height="10" fill="#7dff5c"/>
+  </g>
+  <!-- label chip -->
+  <rect x="384" y="660" width="256" height="52" rx="12" fill="#241a38" stroke="#7c5cff" stroke-width="2"/>
+  <circle cx="424" cy="686" r="10" fill="#ff6b3d"/>
+  <g fill="#c2a4ff">
+    <rect x="452" y="678" width="150" height="8" rx="4"/><rect x="452" y="692" width="96" height="6" rx="3" opacity="0.55"/>
+  </g>
+</svg>

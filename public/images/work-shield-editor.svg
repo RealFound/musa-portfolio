@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+  <rect width="1024" height="768" fill="#0d0a12"/>
+  <g opacity="0.06" stroke="#c2a4ff" stroke-width="1">
+    <path d="M0 96H1024M0 192H1024M0 288H1024M0 384H1024M0 480H1024M0 576H1024M0 672H1024M128 0V768M256 0V768M384 0V768M512 0V768M640 0V768M768 0V768M896 0V768"/>
+  </g>
+  <rect x="312" y="96" width="400" height="48" rx="10" fill="#171221" stroke="#2c2440"/>
+  <path d="M352 120l16-14v28z" fill="#c2a4ff"/>
+  <path d="M392 106l16 14-16 14z" fill="#5b4a86"/>
+  <path d="M648 120l16-14v28z" fill="#5b4a86"/>
+  <path d="M688 106l16 14-16 14z" fill="#c2a4ff"/>
+  <path d="M512 176l180 36v196c0 128-84 208-180 252-96-44-180-124-180-252V212z" fill="#171221" stroke="#c2a4ff" stroke-width="6"/>
+  <path d="M512 216l140 28v164c0 100-64 168-140 208z" fill="#241a38"/>
+  <g>
+    <rect x="404" y="268" width="52" height="52" fill="#7c5cff"/>
+    <rect x="456" y="268" width="52" height="52" fill="#c2a4ff"/>
+    <rect x="508" y="268" width="52" height="52" fill="#7c5cff"/>
+    <rect x="404" y="320" width="52" height="52" fill="#c2a4ff"/>
+    <rect x="456" y="320" width="52" height="52" fill="#d8ff3e"/>
+    <rect x="508" y="320" width="52" height="52" fill="#c2a4ff"/>
+    <rect x="430" y="372" width="52" height="52" fill="#7c5cff"/>
+    <rect x="482" y="372" width="52" height="52" fill="#c2a4ff"/>
+    <rect x="456" y="424" width="52" height="52" fill="#d8ff3e"/>
+  </g>
+  <g>
+    <rect x="120" y="220" width="56" height="56" rx="8" fill="#d8ff3e"/>
+    <rect x="120" y="300" width="56" height="56" rx="8" fill="#7c5cff"/>
+    <rect x="120" y="380" width="56" height="56" rx="8" fill="#ff6b5c"/>
+    <rect x="120" y="460" width="56" height="56" rx="8" fill="#4dd0ff"/>
+    <rect x="120" y="540" width="56" height="56" rx="8" fill="#f5f5f2"/>
+  </g>
+  <g>
+    <rect x="788" y="240" width="116" height="40" rx="8" fill="#171221" stroke="#2c2440"/>
+    <rect x="788" y="300" width="116" height="40" rx="8" fill="#171221" stroke="#2c2440"/>
+    <rect x="788" y="360" width="116" height="40" rx="8" fill="#d8ff3e"/>
+  </g>
+  <text x="512" y="716" text-anchor="middle" font-family="monospace" font-size="30" fill="#5b4a86" letter-spacing="8">lbShieldEditor</text>
+</svg>

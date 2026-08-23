@@ -28,9 +28,9 @@ const WhatIDo = () => {
     <div className="whatIDO">
       <div className="what-box">
         <h2 className="title">
-          W<span className="hat-h2">HAT</span>
+          NELER
           <div>
-            I<span className="do-h2"> DO</span>
+            YAPI<span className="do-h2">YORUM</span>
           </div>
         </h2>
       </div>
@@ -87,24 +87,25 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h3>GELİŞTİRME</h3>
+              <h4>Açıklama</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                Minecraft pluginleri, plugin paketleri, Discord botları ve web
+                siteleri geliştiriyorum. Sıfırdan, kimseden yardım almadan:
+                temiz kod, config dosyası ve kalıcı veri mimarisiyle teslim.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Yetenekler &amp; araçlar</h5>
               <div className="what-content-flex">
+                <div className="what-tags">Java</div>
                 <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
                 <div className="what-tags">Node.js</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">React</div>
                 <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">Nuxt.js</div>
+                <div className="what-tags">Discord.js</div>
+                <div className="what-tags">HTML / CSS</div>
+                <div className="what-tags">Git</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +129,23 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h3>PLUGIN PAKETLERİ</h3>
+              <h4>Açıklama</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Her türde sunucu paketini sıfırdan kendim tasarlıyorum:
+                sistemler, ekonomi dengesi, özel menüler ve oyuncu tutma
+                mekanikleri. Paketi alırsın — çalışır.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Yetenekler &amp; araçlar</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">BoxPvP</div>
+                <div className="what-tags">BoxMining</div>
+                <div className="what-tags">SkyBlock</div>
+                <div className="what-tags">UltraSkyBlock</div>
+                <div className="what-tags">EmekSkyBlock</div>
+                <div className="what-tags">Towny</div>
+                <div className="what-tags">Survival</div>
+                <div className="what-tags">Sıfırdan Tasarım</div>
               </div>
               <div className="what-arrow"></div>
             </div>

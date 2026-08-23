@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+  <rect width="1024" height="768" fill="#0d0a12"/>
+  <g opacity="0.06" stroke="#c2a4ff" stroke-width="1">
+    <path d="M0 96H1024M0 192H1024M0 288H1024M0 384H1024M0 480H1024M0 576H1024M0 672H1024M128 0V768M256 0V768M384 0V768M512 0V768M640 0V768M768 0V768M896 0V768"/>
+  </g>
+  <rect x="96" y="180" width="832" height="320" rx="20" fill="#171221" stroke="#2c2440"/>
+  <g>
+    <rect x="136" y="240" width="96" height="110" rx="10" fill="#241a38" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="156" y="286" width="56" height="40" fill="#8a5c2b"/>
+    <rect x="156" y="272" width="56" height="16" fill="#a9743a"/>
+    <rect x="136" y="380" width="96" height="110" rx="10" fill="#241a38" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="156" y="426" width="56" height="40" fill="#8a5c2b"/>
+    <rect x="156" y="412" width="56" height="16" fill="#a9743a"/>
+    <rect x="252" y="240" width="96" height="110" rx="10" fill="#241a38" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="272" y="286" width="56" height="40" fill="#8a5c2b"/>
+    <rect x="272" y="272" width="56" height="16" fill="#a9743a"/>
+    <rect x="252" y="380" width="96" height="110" rx="10" fill="#241a38" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="272" y="426" width="56" height="40" fill="#8a5c2b"/>
+    <rect x="272" y="412" width="56" height="16" fill="#a9743a"/>
+    <rect x="368" y="240" width="96" height="110" rx="10" fill="#241a38" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="388" y="286" width="56" height="40" fill="#8a5c2b"/>
+    <rect x="388" y="272" width="56" height="16" fill="#a9743a"/>
+    <rect x="368" y="380" width="96" height="110" rx="10" fill="#241a38" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="388" y="426" width="56" height="40" fill="#8a5c2b"/>
+    <rect x="388" y="412" width="56" height="16" fill="#a9743a"/>
+    <rect x="484" y="240" width="96" height="110" rx="10" fill="#241a38" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="504" y="286" width="56" height="40" fill="#8a5c2b"/>
+    <rect x="504" y="272" width="56" height="16" fill="#a9743a"/>
+  </g>
+  <rect x="600" y="240" width="288" height="250" rx="14" fill="#1c2410" stroke="#d8ff3e" stroke-width="4"/>
+  <rect x="648" y="330" width="80" height="56" fill="#a9743a"/>
+  <rect x="648" y="310" width="80" height="22" fill="#c98d4b"/>
+  <rect x="680" y="344" width="16" height="16" fill="#d8ff3e"/>
+  <path d="M760 356l26 26 52-56" stroke="#d8ff3e" stroke-width="12" fill="none" stroke-linecap="square"/>
+  <g fill="#d8ff3e">
+    <rect x="160" y="560" width="14" height="14"/><rect x="196" y="560" width="14" height="14"/><rect x="232" y="560" width="14" height="14"/><rect x="268" y="560" width="14" height="14"/><rect x="304" y="560" width="14" height="14"/><rect x="340" y="560" width="14" height="14"/>
+  </g>
+  <text x="420" y="576" font-family="monospace" font-size="28" fill="#5b4a86" letter-spacing="6">SERİ x6</text>
+  <text x="512" y="700" text-anchor="middle" font-family="monospace" font-size="30" fill="#5b4a86" letter-spacing="8">lbDailyRewards</text>
+</svg>

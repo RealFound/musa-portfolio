@@ -5,6 +5,8 @@ import Contact from "./Contact";
 import Cursor from "./Cursor";
 import Landing from "./Landing";
 import Navbar from "./Navbar";
+import References from "./References";
+import Reviews from "./Reviews";
 import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
@@ -44,10 +46,12 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <Career />
             <Work />
             {isDesktopView && (
-              <Suspense fallback={<div>Loading....</div>}>
+              <Suspense fallback={<div>Yükleniyor...</div>}>
                 <TechStack />
               </Suspense>
             )}
+            <References />
+            <Reviews />
             <Contact />
           </div>
         </div>
