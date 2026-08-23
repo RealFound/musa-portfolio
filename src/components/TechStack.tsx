@@ -202,7 +202,13 @@ const TechStack = () => {
         />
         {!lowPower && (
           <EffectComposer enableNormalPass={false}>
-            <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
+            <N8AO
+              color="#0f002c"
+              aoRadius={2}
+              intensity={1.15}
+              quality="low"
+              halfRes
+            />
           </EffectComposer>
         )}
       </Canvas>
