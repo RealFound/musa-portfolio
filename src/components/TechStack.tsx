@@ -173,8 +173,15 @@ const TechStack = () => {
 
       <Canvas
         shadows
+        frameloop={isActive ? "always" : "never"}
         dpr={[1, lowPower ? 1 : 1.5]}
-        gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+        gl={{
+          alpha: true,
+          stencil: false,
+          depth: false,
+          antialias: false,
+          powerPreference: "high-performance",
+        }}
         camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
         onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
         className="tech-canvas"

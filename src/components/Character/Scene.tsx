@@ -12,6 +12,9 @@ import {
 } from "./utils/mouseUtils";
 import setAnimations from "./utils/animationUtils";
 import { setProgress } from "../Loading";
+import { isLowPowerDevice } from "../utils/device";
+
+const lowPower = isLowPowerDevice();
 
 const Scene = () => {
   const canvasDiv = useRef<HTMLDivElement | null>(null);
@@ -29,11 +32,12 @@ const Scene = () => {
 
       const renderer = new THREE.WebGLRenderer({
         alpha: true,
-        antialias: true,
+        antialias: !lowPower,
+        powerPreference: "high-performance",
       });
       renderer.setSize(container.width, container.height);
       // Pixel ratio'yu sınırla: retina/4K ekranlarda GPU yükünü ciddi azaltır
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+      renderer.setPixelRatio(lowPower ? 1 : Math.min(window.devicePixelRatio, 1.5));
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
       renderer.toneMappingExposure = 1;
       canvasDiv.current.appendChild(renderer.domElement);
@@ -107,8 +111,25 @@ const Scene = () => {
         landingDiv.addEventListener("touchstart", onTouchStart);
         landingDiv.addEventListener("touchend", onTouchEnd);
       }
+      // Adaptif çözünürlük: FPS düşerse pixel ratio'yu otomatik indir
+      let fpsFrames = 0;
+      let fpsTime = 0;
+      let lastFrame = performance.now();
+
       const animate = () => {
         requestAnimationFrame(animate);
+        const now = performance.now();
+        fpsTime += now - lastFrame;
+        lastFrame = now;
+        fpsFrames++;
+        if (fpsTime >= 2000) {
+          const fps = (fpsFrames * 1000) / fpsTime;
+          if (fps < 30 && renderer.getPixelRatio() > 0.75) {
+            renderer.setPixelRatio(Math.max(0.75, renderer.getPixelRatio() - 0.25));
+          }
+          fpsFrames = 0;
+          fpsTime = 0;
+        }
         if (headBone) {
           handleHeadRotation(
             headBone,

@@ -1,14 +1,16 @@
 import * as THREE from "three";
 import { RGBELoader } from "three-stdlib";
 import { gsap } from "gsap";
+import { isLowPowerDevice } from "../../utils/device";
 
 const setLighting = (scene: THREE.Scene) => {
+  const shadowSize = isLowPowerDevice() ? 512 : 1024;
   const directionalLight = new THREE.DirectionalLight(0xc7a9ff, 0);
   directionalLight.intensity = 0;
   directionalLight.position.set(-0.47, -0.32, -1);
   directionalLight.castShadow = true;
-  directionalLight.shadow.mapSize.width = 1024;
-  directionalLight.shadow.mapSize.height = 1024;
+  directionalLight.shadow.mapSize.width = shadowSize;
+  directionalLight.shadow.mapSize.height = shadowSize;
   directionalLight.shadow.camera.near = 0.5;
   directionalLight.shadow.camera.far = 50;
   scene.add(directionalLight);
